@@ -34,7 +34,7 @@
 
 ### Association
 - belongs_to :user
-- has_one :purchase_records
+- has_one :purchase_record
 
 ## addressesテーブル
 
@@ -45,12 +45,12 @@
 |address	        |string	   |null: false|
 |building_name    |string	   ||
 |phone_number	    |string	   |null: false|
-|purchase_records |references|null: false|
+|purchase_record  |references|foreign_key: true|
 
 
 ### Association
-- belongs_to :purchase_records
-
+- belongs_to :item
+- has_one :purchase_record
 
 ## Purchase_recordsテーブル
 |Column	      |Type	     |Options|
@@ -60,5 +60,5 @@
 ### Association
 - belongs_to :user
 - belongs_to :item
-- has_many :purchase_records
+- has_one :address
 
