@@ -1,0 +1,62 @@
+<mxfile host="65bd71144e">
+    <diagram id="-13MfSZkKjfZzdresC9x" name="ページ1">
+        <mxGraphModel dx="663" dy="598" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="2" value="ユーザー情報（users）" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="30" y="200" width="200" height="270" as="geometry"/>
+                </mxCell>
+                <mxCell id="7" value="&lt;ul&gt;&lt;li&gt;ニックネーム&lt;/li&gt;&lt;li&gt;メールアドレス&lt;/li&gt;&lt;li&gt;パスワード&lt;/li&gt;&lt;li&gt;パス確認&lt;/li&gt;&lt;li&gt;本人確認&lt;br&gt;&lt;/li&gt;&lt;ul&gt;&lt;li&gt;苗字　名前&lt;/li&gt;&lt;li&gt;ミョウジ　ナマエ&lt;/li&gt;&lt;/ul&gt;&lt;li&gt;生年月日&lt;br&gt;&lt;/li&gt;&lt;ul&gt;&lt;li&gt;年&lt;/li&gt;&lt;li&gt;月&lt;/li&gt;&lt;li&gt;日&lt;/li&gt;&lt;/ul&gt;&lt;/ul&gt;" style="text;strokeColor=none;fillColor=none;html=1;whiteSpace=wrap;verticalAlign=middle;overflow=hidden;" parent="2" vertex="1">
+                    <mxGeometry y="30" width="200" height="240" as="geometry"/>
+                </mxCell>
+                <mxCell id="8" value="商品情報（items）" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="369" y="200" width="230" height="270" as="geometry"/>
+                </mxCell>
+                <mxCell id="12" value="&lt;ul&gt;&lt;li&gt;画像&lt;/li&gt;&lt;li&gt;商品名&lt;/li&gt;&lt;ul&gt;&lt;li&gt;カテゴリ&lt;/li&gt;&lt;li&gt;状態&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;発送元&lt;/span&gt;&lt;br&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;発送までの日数&lt;/span&gt;&lt;br&gt;&lt;/li&gt;&lt;/ul&gt;&lt;li&gt;販売価格&lt;/li&gt;&lt;ul&gt;&lt;li&gt;300~9,999,999の正規表現？&lt;/li&gt;&lt;/ul&gt;&lt;/ul&gt;" style="text;strokeColor=none;fillColor=none;html=1;whiteSpace=wrap;verticalAlign=middle;overflow=hidden;" parent="8" vertex="1">
+                    <mxGeometry y="30" width="230" height="240" as="geometry"/>
+                </mxCell>
+                <mxCell id="13" style="edgeStyle=none;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" target="12" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="340" y="350" as="sourcePoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="14" style="edgeStyle=none;html=1;entryX=0.004;entryY=0.592;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" target="12" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="340" y="350" as="sourcePoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="15" style="edgeStyle=none;html=1;entryX=-0.004;entryY=0.388;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" target="12" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="340" y="350" as="sourcePoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="16" style="edgeStyle=none;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="7" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="230" y="350" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="17" style="edgeStyle=none;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="7" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="340" y="350" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="18" value="購入者（Purchaser）" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="80" y="550" width="210" height="270" as="geometry"/>
+                </mxCell>
+                <mxCell id="22" value="&lt;ul&gt;&lt;li&gt;決済情報&lt;/li&gt;&lt;ul&gt;&lt;li&gt;カード番号&lt;/li&gt;&lt;li&gt;有効期限&lt;/li&gt;&lt;li&gt;セキュリティコード&lt;/li&gt;&lt;/ul&gt;&lt;li&gt;配送先&lt;/li&gt;&lt;ul&gt;&lt;li&gt;郵便番号&lt;/li&gt;&lt;li&gt;都道府県&lt;/li&gt;&lt;li&gt;市区町村&lt;/li&gt;&lt;li&gt;番地&lt;/li&gt;&lt;li&gt;建物名（任意）&lt;/li&gt;&lt;li&gt;電話番号&lt;/li&gt;&lt;/ul&gt;&lt;/ul&gt;" style="text;strokeColor=none;fillColor=none;html=1;whiteSpace=wrap;verticalAlign=middle;overflow=hidden;" parent="18" vertex="1">
+                    <mxGeometry y="30" width="210" height="240" as="geometry"/>
+                </mxCell>
+                <mxCell id="23" style="edgeStyle=none;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="7" target="18" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="29" value="" style="endArrow=none;html=1;exitX=1;exitY=0;exitDx=0;exitDy=0;entryX=0;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="18" target="12">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="230" y="510" as="sourcePoint"/>
+                        <mxPoint x="280" y="460" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
