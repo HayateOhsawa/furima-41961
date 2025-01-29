@@ -58,5 +58,5 @@
 ### Association
 
 -belongs_to :user
--belongs_to :product
+-belongs_to :item
 
