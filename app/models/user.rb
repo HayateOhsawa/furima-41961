@@ -7,7 +7,6 @@ class User < ApplicationRecord
   PASSWORD_REGEX = /\A(?=.*?[a-z])(?=.*?\d)[a-z\d]+\z/i
   with_options presence: true do
     validates :nickname
-    validates :email, format: { with: URI::MailTo::EMAIL_REGEXP, message: '有効なメールアドレスを入力してください' }
     validates :password, length: { minimum: 6 }, format: { with: PASSWORD_REGEX, message: 'には英字と数字の両方を含めて設定してください' }, if: lambda {
       password.present?
     }
