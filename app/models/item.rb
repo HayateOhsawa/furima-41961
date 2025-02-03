@@ -24,5 +24,10 @@ class Item < ApplicationRecord
   validates :category_id, :condition_id, :shipping_fee_id,
             :prefecture_id, :ship_day_id, numericality: { other_than: 1 , message: "can't be blank"}
 
+  # def sold_out?
+    # "売り切れ" を判断するためのロジックをここに記述
+    # 例: 在庫が0かどうかを確認する
+    # self.stock == 0
+  # end
 
 end
