@@ -52,7 +52,7 @@
 ### Association
 - belongs_to :purchase_record
 
-## Purchase_recordsテーブル
+## Ordersテーブル
 |Column	      |Type	     |Options|
 |-------------|----------|-------|
 |user 	      |references|null: false, foreign_key: true|
