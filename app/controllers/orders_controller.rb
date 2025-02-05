@@ -1,4 +1,8 @@
 class OrdersController < ApplicationController
+  before_action :authenticate_user!
+  before_action :check_sold_out, only: [:index, :create]
+  before_action :set_item, only: [:index, :create]
+
   def index
     gon.public_key = ENV['PAYJP_PUBLIC_KEY']
     @item = Item.find(params[:item_id])
@@ -32,5 +36,16 @@ class OrdersController < ApplicationController
       card: order_address_params[:token],
       currency: 'jpy'
     )
+  end
+
+  def check_sold_out
+    @item = Item.find(params[:item_id])
+    return unless @item.sold_out? || current_user.id == @item.user_id
+
+    redirect_to root_path
+  end
+
+  def set_item
+    @item = Item.find(params[:id])
   end
 end
