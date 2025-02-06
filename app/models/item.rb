@@ -24,6 +24,6 @@ class Item < ApplicationRecord
             :prefecture_id, :ship_day_id, numericality: { other_than: 1, message: "can't be blank" }
 
   def sold_out?
-    Order.exists?
+    order.present?
   end
 end

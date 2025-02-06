@@ -40,9 +40,6 @@ class OrdersController < ApplicationController
     )
   end
 
-  def sold_out?
-  end
-
   def check_sold_out
     return unless @item.sold_out? || current_user.id == @item.user_id
 
